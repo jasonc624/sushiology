@@ -1,0 +1,65 @@
+            <div class="section" id="slideshow">
+            <div class="headline">
+                    <h1 class="orangeannouncement">Sushi</h1> has a
+                    <h1 class="salmonannouncement">Science</h1>
+            </div>
+            <div id="slider">
+                <div class="sp-slideshow">
+                    <!-- BEGIN SLIDESHOW -->
+                    <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked">
+                    <label for="button-1" class="button-label-1"></label>
+                    <input id="button-2" type="radio" name="radio-set" class="sp-selector-2">
+                    <label for="button-2" class="button-label-2"></label>
+                    <input id="button-3" type="radio" name="radio-set" class="sp-selector-3">
+                    <label for="button-3" class="button-label-3"></label>
+                    <input id="button-4" type="radio" name="radio-set" class="sp-selector-4">
+                    <label for="button-4" class="button-label-4"></label>
+                    <label for="button-1" class="sp-arrow sp-a1"></label>
+                    <label for="button-2" class="sp-arrow sp-a2"></label>
+                    <label for="button-3" class="sp-arrow sp-a3"></label>
+                    <label for="button-4" class="sp-arrow sp-a4"></label>
+                    <div class="sp-content">
+                        <div class="sp-parallax-bg"></div>
+                        <ul class="sp-slider clearfix">
+                            <li>
+                                <%= image_tag ("image1.png")%>
+                            </li>
+                            <li>
+                                <%= image_tag ("image1.png")%>
+                            </li>
+                            <li>
+                                <%= image_tag ("image1.png")%>
+                            </li>
+                            <li>
+                                <%= image_tag ("image1.png")%>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- sp-content -->
+                </div>
+            </div>
+            <ul id="features">
+                <li class="col chefs">
+                    <%= image_tag ('chef_icon.png'), :class => "topic_icon" %>
+                    <h3 class="sub_heading">Our Chefs</h3>
+                    <p class="description">
+                        Our Chef Scientists have the formula for great sushi down pat. We employ only the finest Chefs around, with years of experience. We seek mostly in the mother land for our chefs, so the taste and styling is authentic.</p>
+                </li>
+                <li class="col questions">
+                    <%= image_tag ('question_icon.png'), :class => "topic_icon" %>
+                    <h3 class="sub_heading">Questions</h3>
+                    <p class="description">
+                        We always appreciate our customers chiming in on what they would like to see, or how we can make their experience a better one. Drop us an email.</p>
+                    <a href="mailto:hello@sushiology.com" class="email_link">hello@sushiology.com</a>
+                </li>
+                <li class="col subscribe">
+                    <%= image_tag ('message_icon.png'), :class => "topic_icon" %>
+                    <h3 class="sub_heading">Subscribe</h3>
+                    <p class="description">
+                        We are always learning and growing our business. Enter your e-mail to subscribe to our monthly newsletter. We offer specials to those that subscribe to us.</p>
+                            <input type="text" name="email" placeholder="Your email address">
+                            <button type="submit"><i class="fi-plus"></i></button>
+                    <form id="newsletter-signup" action="/newsletter" method="post"></form>
+                </li>
+            </ul>
+            </div>

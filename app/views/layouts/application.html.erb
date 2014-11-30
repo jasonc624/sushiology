@@ -10,31 +10,16 @@
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
-
-        <!-- Bootstrap core CSS -->
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
     </head>
 
-    <body>
-        <%= render :partial ('layouts/navbar')%>
+    <body class="clear">
+        <%= render partial: "layouts/navbar" %>
         <div class="container">
 
         <%= yield %>
+        
+        <%= render partial: "layouts/footer" %>
 
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- compiled and minified Bootstrap JavaScript -->
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </body>
 </html>
